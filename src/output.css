@@ -554,14 +554,13 @@ video {
   display: none;
 }
 
+.m-10 {
+  margin: 2.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 
 .my-4 {
@@ -569,8 +568,24 @@ video {
   margin-bottom: 1rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-8 {
+  height: 2rem;
 }
 
 .w-full {
@@ -581,16 +596,28 @@ video {
   max-width: 24rem;
 }
 
-.border-r {
-  border-right-width: 1px;
+.flex-grow {
+  flex-grow: 1;
 }
 
-.border-r-2 {
-  border-right-width: 2px;
+.list-disc {
+  list-style-type: disc;
 }
 
-.border-b-2 {
-  border-bottom-width: 2px;
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .border-b-4 {
@@ -610,11 +637,6 @@ video {
   border-color: rgb(247 147 30 / var(--tw-border-opacity, 1));
 }
 
-.border-r-orange {
-  --tw-border-opacity: 1;
-  border-right-color: rgb(247 147 30 / var(--tw-border-opacity, 1));
-}
-
 .bg-paleOrange {
   --tw-bg-opacity: 1;
   background-color: rgb(255 217 166 / var(--tw-bg-opacity, 1));
@@ -625,19 +647,157 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
+.bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.bg-mobile {
+  background-image: url('bg-mobile.png');
+}
+
+.from-lightOrange {
+  --tw-gradient-from: #fbb03b var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(251 176 59 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-orange {
+  --tw-gradient-to: #f7931e var(--tw-gradient-to-position);
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-bottom {
+  background-position: bottom;
+}
+
+.bg-right {
+  background-position: right;
+}
+
+.bg-right-bottom {
+  background-position: right bottom;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.fill-orange {
+  fill: #f7931e;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-4 {
   padding: 1rem;
 }
 
-.font-title {
-  font-family: Playfair Display, serif;
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .font-sans {
   font-family: Josefin Sans, sans-serif;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.font-title {
+  font-family: Playfair Display, serif;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.marker\:text-orange *::marker {
+  color: rgb(247 147 30 );
+}
+
+.marker\:text-orange::marker {
+  color: rgb(247 147 30 );
+}
+
+.hover\:bg-gradient-to-t:hover {
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+
+@media (min-width: 768px) {
+  .md\:grid {
+    display: grid;
+  }
+
+  .md\:h-full {
+    height: 100%;
+  }
+
+  .md\:w-2\/3 {
+    width: 66.666667%;
+  }
+
+  .md\:max-w-3xl {
+    max-width: 48rem;
+  }
+
+  .md\:flex-none {
+    flex: none;
+  }
+
+  .md\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .md\:gap-8 {
+    gap: 2rem;
+  }
+
+  .md\:p-8 {
+    padding: 2rem;
+  }
 }
